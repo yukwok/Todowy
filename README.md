@@ -1,2 +1,9 @@
 # Todowy-
 Todowy is the app with To-do-list structure
+Functions:
+1.Add the Task
+2.Check the task as done
+3.Delete the task
+
+Thanks,
+YuKwok Ng
