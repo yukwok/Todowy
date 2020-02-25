@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:todowy/models/task.dart';
 import 'dart:collection';
@@ -14,6 +15,16 @@ class TaskData extends ChangeNotifier {
 
   int get tasksCount {
     return _tasks.length;
+  }
+
+  void getTasks() async {
+    Firestore _db = Firestore.instance;
+
+    var response =
+        await _db.collection('tasks').snapshots()
+            .map((snapshot) => {});
+
+    print('$response');
   }
 
   void addTask(String newTaskTitle) {

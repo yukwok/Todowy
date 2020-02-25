@@ -23,7 +23,7 @@ class AddTaskScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Text(
-              'Add task here',
+              'Add task here:',
               style: TextStyle(fontSize: 18.0),
               textAlign: TextAlign.center,
             ),
@@ -45,6 +45,8 @@ class AddTaskScreen extends StatelessWidget {
                 if (newTaskName != null)
                   Provider.of<TaskData>(context).addTask(newTaskName);
                 Navigator.pop(context);
+                Provider.of<TaskData>(context).getTasks();
+
               },
               child: Text(
                 'Add',
