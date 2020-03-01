@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todowy/models/task_data.dart';
 
-//import 'package:todowy/widgets/tasks_list.dart';
+import 'package:todowy/widgets/tasks_list.dart';
 import 'package:todowy/screens/add_task_screen.dart';
 import 'package:todowy/widgets/tasks_list_firestore.dart';
 
@@ -70,19 +70,6 @@ class TasksScreen extends StatelessWidget {
               ],
             ),
           ),
-//          Expanded(
-//            child: Container(
-//              padding: EdgeInsets.symmetric(horizontal: 20.0),
-//              height: 1.0,
-//              decoration: BoxDecoration(
-//                  color: Colors.white,
-//                  borderRadius: BorderRadius.only(
-//                    topRight: Radius.circular(30.0),
-//                    topLeft: Radius.circular(30.0),
-//                  )),
-//              child: TasksList(),
-//            ),
-//          ),
           Expanded(
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -93,7 +80,20 @@ class TasksScreen extends StatelessWidget {
                     topRight: Radius.circular(30.0),
                     topLeft: Radius.circular(30.0),
                   )),
-              child: TasksList_googleStore(),
+              child: TasksList(),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              height: 1.0,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(30.0),
+                    topLeft: Radius.circular(30.0),
+                  )),
+              child: TasksList_Firestore(),
             ),
           ),
         ],
