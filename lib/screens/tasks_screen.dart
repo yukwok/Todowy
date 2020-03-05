@@ -53,7 +53,7 @@ class TasksScreen extends StatelessWidget {
                   height: 30.0,
                 ),
                 Text(
-                  'TODOWY ',
+                  'TODOWY v.Pro',
                   style: TextStyle(
                     fontSize: 50.0,
                     color: Colors.grey,
@@ -70,19 +70,19 @@ class TasksScreen extends StatelessWidget {
               ],
             ),
           ),
-          Expanded(
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              height: 1.0,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(30.0),
-                    topLeft: Radius.circular(30.0),
-                  )),
-              child: TasksList(),
-            ),
-          ),
+//          Expanded(
+//            child: Container(
+//              padding: EdgeInsets.symmetric(horizontal: 20.0),
+//              height: 1.0,
+//              decoration: BoxDecoration(
+//                  color: Colors.white,
+//                  borderRadius: BorderRadius.only(
+//                    topRight: Radius.circular(30.0),
+//                    topLeft: Radius.circular(30.0),
+//                  )),
+//              child: TasksList(),
+//            ),
+//          ),
           Expanded(
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20.0),

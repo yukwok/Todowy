@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:todowy/models/dummy_data.dart';
 
 import 'package:todowy/screens/tasks_screen.dart';
 
@@ -14,6 +15,9 @@ class MyApp extends StatelessWidget {
       MultiProvider(
           providers: [
             ChangeNotifierProvider<TaskData>(create: (context) => TaskData()),
+            //TODO: Practice and test the concept of Provider
+            //Provider<DummyData>(create: (context) => DummyData()),
+
           ],
           child: MaterialApp(
             home: TasksScreen(),
