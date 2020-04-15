@@ -7,7 +7,9 @@ class TaskData extends ChangeNotifier {
   List<Task> _tasks = [
     Task(name: 'Homework(default)'),
     Task(name: 'pccw(default)'),
-    Task(name: 'pccw(default)'),
+
+    Task(name: '123(default)'),
+    Task(name: '456(default)'),
   ];
 
   UnmodifiableListView<Task> get tasks {

@@ -23,10 +23,10 @@ class TasksScreen extends StatelessWidget {
                   )));
         },
         child: Icon(Icons.add),
-        foregroundColor: Colors.grey,
-        backgroundColor: Colors.amberAccent,
+        foregroundColor: Colors.redAccent,
+        backgroundColor: Colors.blueAccent,
       ),
-      backgroundColor: Colors.amberAccent,
+      backgroundColor: Colors.blueAccent,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -42,10 +42,10 @@ class TasksScreen extends StatelessWidget {
               children: <Widget>[
                 CircleAvatar(
                   radius: 30.0,
-                  backgroundColor: Colors.grey,
+                  backgroundColor: Colors.black26,
                   foregroundColor: Colors.amberAccent,
                   child: Icon(
-                    Icons.list,
+                    Icons.menu,
                     size: 30,
                   ),
                 ),
@@ -53,10 +53,10 @@ class TasksScreen extends StatelessWidget {
                   height: 30.0,
                 ),
                 Text(
-                  'TODOWY v.Pro',
+                  'TODOWY pro',
                   style: TextStyle(
                     fontSize: 50.0,
-                    color: Colors.grey,
+                    color: Colors.white,
                     fontWeight: FontWeight.w300,
                   ),
                 ),
@@ -70,19 +70,6 @@ class TasksScreen extends StatelessWidget {
               ],
             ),
           ),
-//          Expanded(
-//            child: Container(
-//              padding: EdgeInsets.symmetric(horizontal: 20.0),
-//              height: 1.0,
-//              decoration: BoxDecoration(
-//                  color: Colors.white,
-//                  borderRadius: BorderRadius.only(
-//                    topRight: Radius.circular(30.0),
-//                    topLeft: Radius.circular(30.0),
-//                  )),
-//              child: TasksList(),
-//            ),
-//          ),
           Expanded(
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -93,9 +80,23 @@ class TasksScreen extends StatelessWidget {
                     topRight: Radius.circular(30.0),
                     topLeft: Radius.circular(30.0),
                   )),
-              child: TasksList_Firestore(),
+              child: TasksList(),
             ),
           ),
+          // below is the similiar to above TaskList
+//          Expanded(
+//            child: Container(
+//              padding: EdgeInsets.symmetric(horizontal: 20.0),
+//              height: 1.0,
+//              decoration: BoxDecoration(
+//                  color: Colors.white,
+//                  borderRadius: BorderRadius.only(
+//                    topRight: Radius.circular(30.0),
+//                    topLeft: Radius.circular(30.0),
+//                  )),
+//              child: TasksListFireStore(),
+//            ),
+//          ),
         ],
       ),
     );

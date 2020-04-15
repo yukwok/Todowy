@@ -49,7 +49,7 @@ class AddTaskScreen extends StatelessWidget {
 
               },
               child: Text(
-                'Add',
+                'Add1',
                 style: TextStyle(fontSize: 20.0),
               ),
             )

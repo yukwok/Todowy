@@ -11,22 +11,18 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return
-      MultiProvider(
-          providers: [
-            ChangeNotifierProvider<TaskData>(create: (context) => TaskData()),
-            //TODO: Practice and test the concept of Provider
-            //Provider<DummyData>(create: (context) => DummyData()),
-
-          ],
-          child: MaterialApp(
-            home: TasksScreen(),
-          ),
-
-      );
-
-
-
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider<TaskData>(
+          create: (BuildContext context) => TaskData(),
+        ),
+        //TODO: Practice and test the concept of Provider
+        //Provider<DummyData>(create: (context) => DummyData()),
+      ],
+      child: MaterialApp(
+        home: TasksScreen(),
+      ),
+    );
   }
 }
 
@@ -38,5 +34,3 @@ class MyApp extends StatelessWidget {
 //],
 //child: someWidget,
 //)
-
-
