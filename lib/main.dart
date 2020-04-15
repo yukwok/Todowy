@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
           create: (BuildContext context) => TaskData(),
         ),
         //TODO: Practice and test the concept of Provider
-        //Provider<DummyData>(create: (context) => DummyData()),
+        ChangeNotifierProvider<DummyData>(
+          create: (context) => DummyData(),
+        ),
       ],
       child: MaterialApp(
         home: TasksScreen(),
